@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopO</title>
+  <link rel="stylesheet" href="./assets/css/shopo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- nav section start  -->
+  <nav>
+    <div class="container">
+      <div class="row">
+        <div class="main-box">
+          <div class="box">
+            <ul>
+              <li><a href="#">account</a></li>
+              <li><a href="#">track order</a></li>
+              <li><a href="#">support</a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <form action="#">
+              <ul>
+                <li>
+                  <div class="image">
+                    <img src="assets/image/country-logo-16x16.png" alt="">
+                  </div>
+
+                  <select name="state" id="state">
+                    <option value="united state">united state</option>
+                    <option value="bangladesh">bangladesh</option>
+                    <option value="bharat">bharat</option>
+                  </select>
+
+                </li>
+                <li>
+                  <select name="" id="">
+                    <option value="usd">USD</option>
+                    <option value="bdt">BDT</option>
+                  </select>
+
+                </li>
+
+                <li>
+                  <select name="language" id="">
+                    <option value="bangla">bangla</option>
+                    <option value="english">english</option>
+                  </select>
+
+                </li>
+              </ul>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- nav section end  -->
+  <!-- header section start  -->
+  <header>
+    <div class="row">
+      <div class="top">
+        <div class="logo">
+          <div class="image">
+            <img src="assets/image/logo.svg" alt="">
+          </div>
+        </div>
+        <div class="search">
+          <form action="#">
+            <ul>
+              <li>
+                <input type="text" placeholder="search product...">
+              </li>
+              <li>
+                <select name="all catagorise" id="">
+                  <option value="laptop">laptop</option>
+                  <option value="mobile">mobile</option>
+                  <option value="ac">AC</option>
+                </select>
+              </li>
+              <li>
+                <button>search</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div class="collection">
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-recycle"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="categories">
+          <a href="#" onclick="down()">
+            <ul>
+              <li><i class="fa-solid fa-bars-staggered"></i></li>
+              <li><span>all categories</span></li>
+              <li><i class="fa-solid fa-chevron-down"></i></li>
+            </ul>
+          </a>
+          <div id="slidedown">
+            <ul>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li><i class="fa-solid fa-mobile-screen-button"></i></li>
+                    <li><span> mobile & laptops</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li> <i class="fa-solid fa-gamepad"></i></li>
+                    <li><span>gaming entertainment</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li><i class="fa-solid fa-camera"></i></li>
+                    <li><span> image & video</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li><i class="fa-solid fa-car-side"></i></li>
+                    <li><span>vehicles</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li><i class="fa-solid fa-couch"></i></li>
+                    <li><span> furnitures</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li><i class="fa-solid fa-volleyball"></i></li>
+                    <li><span> sport</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li><i class="fa-solid fa-mug-hot"></i></li>
+                    <li><span>food & drinks</span></li>
+                    <li> <i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li> <i class="fa-solid fa-shirt"></i></li>
+                    <li><span> fasion accessories</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li><i class="fa-solid fa-bottle-droplet"></i></li>
+                    <li><span>toilet & sanitation</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li><i class="fa-solid fa-paintbrush"></i></li>
+                    <li><span>mackup corner</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <ul>
+                    <li><i class="fa-solid fa-bottle-water"></i></li>
+                    <li><span>baby items</span></li>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">homepage<i class="fa-solid fa-chevron-down"></i></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">home one</a></li>
+                  <li><a href="#">home two</a></li>
+                  <li><a href="#">home three</a></li>
+                  <li><a href="#">home four</a></li>
+                  <li><a href="#">home five</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a>
+              <div class="shop-dropdown">
+                <div class="main-box">
+                  <div class="box">
+                    <h3>shop list</h3>
+                    <ul>
+                      <li><a href="#">shop sidebar</a></li>
+                      <li><a href="#">shop fullwidth</a></li>
+                      <li><a href="#">shop categorie icon</a></li>
+                      <li><a href="#">shop categorie icon</a></li>
+                      <li><a href="#">shop list view</a></li>
+                    </ul>
+                  </div>
+                  <div class="box">
+                    <h3>product layout</h3>
+                    <ul>
+                      <li><a href="#">horizontal thumbnail</a></li>
+                      <li><a href="#">vertical thumbnail</a></li>
+                      <li><a href="#">gallery thumbnail</a></li>
+                      <li><a href="#">sticy summary</a></li>
+                    </ul>
+                  </div>
+                  <div class="box">
+                    <h3>popular caregories</h3>
+                    <ul>
+                      <li><a href="#">phone & tablet</a></li>
+                      <li><a href="#">gaming & sports</a></li>
+                      <li><a href="#">home appliance</a></li>
+                      <li><a href="#">fation clothes</a></li>
+                    </ul>
+                  </div>
+                  <div class="box">
+                    <div class="image">
+                      <img src="assets/image/mega-menu-thumb.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">pages<i class="fa-solid fa-chevron-down"></i></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">privacy policy</a></li>
+                  <li><a href="#">terms and conditions</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">shop category lcon</a></li>
+                  <li><a href="#">shop list view</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+        <div class="btn">
+          <a href="#">become a seller <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- header section end  -->
+  <!-- hero section start  -->
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="main-box">
+          <div class="box-1">
+            <div class="image">
+              <img src="assets/image/banner-1.png" alt="">
+            </div>
+          </div>
+          <div class="box-2">
+            <div class="image">
+              <img src="assets/image/banner-2.png" alt="">
+            </div>
+            <div class="image">
+              <img src="assets/image/banner-3.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="main-card">
+          <div class="cart">
+            <div class="content">
+              <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <ul>
+                <li><span>Free Shipping</span></li>
+                <li>
+                  <p>When ordering over $100</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="cart">
+            <div class="content">
+              <div class="icon"><i class="fa-solid fa-arrow-rotate-right"></i></div>
+              <ul>
+                <li><span>Free Return</span></li>
+                <li>
+                  <p>Get Return within 30 days</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="cart">
+            <div class="content">
+              <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <ul>
+                <li><span>Secure Payment</span></li>
+                <li>
+                  <p>100% Secure Online Payment</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="cart">
+            <div class="content">
+              <div class="icon"><i class="fa-solid fa-trophy"></i></div>
+              <ul>
+                <li><span>Best Quality</span></li>
+                <li>
+                  <p>Original Product Guarenteed</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero section end  -->
+  <!-- gamer world section start  -->
+  <section class="gamerworld-section">
+    <div class="container">
+      <div class="row">
+        <div class="main-heading">
+          <ul>
+            <li>
+              <h2>gamer world</h2>
+            </li>
+            <li>
+              <a href="#">view more<i class="fa-solid fa-arrow-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-box">
+          <div class="box">
+            <div class="content">
+
+              <p>mobile & tablet</p>
+              <ul>
+                <li><a href="#">xioami</a></li>
+                <li><a href="#">apple</a></li>
+                <li><a href="#">google</a></li>
+                <li><a href="#">samsung</a></li>
+              </ul>
+              <p><a href="#">shop now<i class="fa-solid fa-chevron-right"></i></a></p>
+
+
+            </div>
+
+          </div>
+          <div class="box">
+            <div class="content">
+              <div class="extra-feature">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-maximize"></i></a></li>
+                  <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-arrows-rotate"></i></a></li>
+                </ul>
+              </div>
+              <div class="btn">
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i>add to cart</a>
+              </div>
+              <div class="image">
+                <img src="assets/image/product-img-1.jpg" alt="">
+
+              </div>
+              <div class="detail">
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#">Xoggle aute et pariatur adipisicing nostrud et</a>
+                <span>$27.27</span>
+                <p>$18.73</p>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="box">
+            <div class="content">
+              <div class="extra-feature">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-maximize"></i></a></li>
+                  <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-arrows-rotate"></i></a></li>
+                </ul>
+              </div>
+              <div class="btn">
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i>add to cart</a>
+              </div>
+              <div class="availablity">
+                <ul>
+                  <li>product available</li>
+                  <li>20</li>
+                </ul>
+                <div class="process">
+                  <div class="done"></div>
+                </div>
+              </div>
+              <div class="image">
+                <img src="assets/image/product-img-2.jpg" alt="">
+              </div>
+              <div class="detail">
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#">Geeky ipsum esse repreh est consequat</a>
+                <span>$32.63</span>
+                <p>$18.03</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="box">
+            <div class="content">
+              <div class="extra-feature">
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-maximize"></i></a></li>
+                  <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa-solid fa-arrows-rotate"></i></a></li>
+                </ul>
+              </div>
+              <div class="btn">
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i>add to cart</a>
+              </div>
+              <div class="popular">
+                <span>popular</span>
+              </div>
+              <div class="image">
+                <img src="assets/image/product-img-3.jpg" alt="">
+              </div>
+              <div class="detail">
+                <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="#">Conjurica ea magna eiusmod esse cupt anim </a>
+                <span>$24.55</span>
+                <p>$17.79</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- gamer world section end  -->
+  <!-- brand-section start  -->
+  <section class="brand-section">
+    <div class="container">
+      <div class="row">
+        <div class="main-heading">
+          <h2>
+            Shop by Brand
+          </h2>
+        </div>
+        <div class="image-box">
+          <ul>
+            <li><img src="assets/image/brand-1.png" alt=""></li>
+            <li><img src="assets/image/brand-2.png" alt=""></li>
+            <li><img src="assets/image/brand-3.png" alt=""></li>
+            <li><img src="assets/image/brand-4.png" alt=""></li>
+            <li><img src="assets/image/brand-5.png" alt=""></li>
+            <li><img src="assets/image/brand-6.png" alt=""></li>
+            <li><img src="assets/image/brand-7.png" alt=""></li>
+            <li><img src="assets/image/brand-8.png" alt=""></li>
+            <li><img src="assets/image/brand-9.png" alt=""></li>
+            <li><img src="assets/image/brand-10.png" alt=""></li>
+            <li><img src="assets/image/brand-11.png" alt=""></li>
+            <li><img src="assets/image/brand-12.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- brand-section end  -->
+  <!-- flash section start  -->
+  <section class="flash-section">
+    <div class="container">
+      <div class="row">
+        <div class="main-box">
+          <div class="box">
+            <ul>
+              <li><i class="fa-solid fa-0"></i>
+                <p>days</p>
+              </li>
+              <li><i class="fa-solid fa-0"></i>
+                <p>hours</p>
+              </li>
+              <li><i class="fa-solid fa-0"></i>
+                <p>minutes</p>
+              </li>
+              <li><i class="fa-solid fa-0"></i>
+                <p>seconds</p>
+              </li>
+            </ul>
+            <h2>woo! flash sale</h2>
+            <a href="#">shop now <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="box">
+            <h5>mobile app version</h5>
+            <h3>Get Our
+              <span>Mobile App</span>
+              <br>
+              It’s Make easy for you life !
+            </h3>
+            <ul>
+              <li><img src="assets/image/play-store.png" alt=""></li>
+              <li><img src="assets/image/apple-store.png" alt=""></li>
+            </ul>
+            <div class="image">
+              <img src="assets/image/app-screen.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- flash section end  -->
+  <script src="assets/javascript/shopo.js"></script>
+</body>
+
+</html>

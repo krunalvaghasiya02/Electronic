@@ -1,0 +1,665 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0px auto;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+nav {
+  border-bottom: 1px solid #e5e7eb;
+  background-color: white;
+}
+nav .container .row .main-box {
+  padding: 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav .container .row .main-box .box ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav .container .row .main-box .box ul li {
+  padding: 0px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+nav .container .row .main-box .box ul li a {
+  color: rgb(34, 34, 34);
+  font-size: 14px;
+  display: block;
+  font-weight: 600;
+}
+nav .container .row .main-box .box ul li image img {
+  display: block;
+  width: 100%;
+}
+nav .container .row .main-box .box ul li select {
+  border: none;
+  box-shadow: none;
+}
+nav .container .row .main-box .box ul li select option {
+  padding: 10px;
+  box-shadow: none;
+  display: block;
+  border: none;
+}
+
+header {
+  background-color: white;
+}
+header .row .top {
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+header .row .top .logo {
+  width: 33.33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .row .top .logo .image {
+  width: 50%;
+  padding-left: 30px;
+}
+header .row .top .logo .image img {
+  width: 100%;
+  display: block;
+}
+header .row .top .search {
+  width: 33.33%;
+}
+header .row .top .search form ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+header .row .top .search form ul li input {
+  padding: 13px 5px;
+  font-size: 12px;
+  border: 1px solid #e5e7eb;
+}
+header .row .top .search form ul li select {
+  padding: 12px 49px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+}
+header .row .top .search form ul li button {
+  padding: 11px 23px;
+  font-size: 16px;
+  background-color: rgb(255, 187, 56);
+  color: rgb(34, 34, 34);
+  border: 1px solid #e5e7eb;
+}
+header .row .top .collection {
+  width: 33.33%;
+  padding-right: 20px;
+}
+header .row .top .collection ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+header .row .top .collection ul li {
+  padding: 0px 10px;
+}
+header .row .top .collection ul li a {
+  color: black;
+  font-size: 20px;
+}
+header .row .bottom {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 187, 56);
+  align-items: center;
+  padding-top: 10px;
+}
+header .row .bottom .categories {
+  width: 25%;
+  padding-left: 20px;
+  position: relative;
+  transition: all 0.5s;
+}
+header .row .bottom .categories a {
+  padding: 15px 10px;
+  background-color: white;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 16px;
+  color: black;
+  display: block;
+}
+header .row .bottom .categories a ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .row .bottom .categories a ul li {
+  padding: 0px 5px;
+}
+header .row .bottom .categories #slidedown {
+  position: absolute;
+  min-width: 296px;
+  top: 48px;
+  left: 20px;
+  height: 0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+header .row .bottom .categories #slidedown.active {
+  height: 100vh;
+  transition: all 0.5s;
+}
+header .row .bottom .categories #slidedown ul li a {
+  border-radius: 0px;
+  padding: 0px;
+  color: black;
+  display: block;
+  padding: 10px 10px;
+  transition: all 0.5s;
+  font-size: 15px;
+}
+header .row .bottom .categories #slidedown ul li a:hover {
+  background-color: rgb(255, 187, 56);
+}
+header .row .bottom .categories #slidedown ul li a ul li {
+  padding: 0px;
+}
+header .row .bottom .menu {
+  width: 60%;
+}
+header .row .bottom .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header .row .bottom .menu ul li {
+  padding: 0px 15px;
+  position: relative;
+  transition: all 0.5s;
+}
+header .row .bottom .menu ul li a {
+  color: black;
+  font-size: 16px;
+  display: block;
+}
+header .row .bottom .menu ul li a i {
+  padding: 0px 5px;
+}
+header .row .bottom .menu ul li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+header .row .bottom .menu ul li:hover .shop-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+header .row .bottom .menu ul li .dropdown {
+  background-color: white;
+  position: absolute;
+  top: 34px;
+  left: 13px;
+  min-width: 200px;
+  border: 1px solid #e5e7eb;
+  opacity: 0;
+  transition: all 0.5s;
+  visibility: hidden;
+}
+header .row .bottom .menu ul li .dropdown ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+header .row .bottom .menu ul li .dropdown ul li a {
+  color: rgb(121, 121, 121);
+  font-size: 16px;
+  display: block;
+  padding: 10px 0px 10px 0px;
+  transition: all 0.5s;
+  opacity: 0.9;
+}
+header .row .bottom .menu ul li .dropdown ul li a:hover {
+  color: rgb(255, 187, 56);
+  opacity: 1;
+  border-bottom: 1px solid rgb(255, 187, 56);
+}
+header .row .bottom .menu ul li .shop-dropdown {
+  background-color: white;
+  position: absolute;
+  top: 34px;
+  left: -529px;
+  min-width: 1200px;
+  border: 1px solid #e5e7eb;
+  opacity: 0;
+  transition: all 0.5s;
+  padding: 50px 25px;
+  visibility: hidden;
+}
+header .row .bottom .menu ul li .shop-dropdown .main-box {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 1000px;
+}
+header .row .bottom .menu ul li .shop-dropdown .main-box .box {
+  width: 25%;
+}
+header .row .bottom .menu ul li .shop-dropdown .main-box .box h3 {
+  padding: 10px 15px;
+}
+header .row .bottom .menu ul li .shop-dropdown .main-box .box .image {
+  width: 100%;
+  height: 100%;
+}
+header .row .bottom .menu ul li .shop-dropdown .main-box .box .image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+header .row .bottom .menu ul li .shop-dropdown .main-box .box ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+header .row .bottom .menu ul li .shop-dropdown .main-box .box ul li a {
+  color: rgb(121, 121, 121);
+  font-size: 16px;
+  display: block;
+  padding: 10px 0px 10px 0px;
+  transition: all 0.5s;
+  opacity: 0.9;
+}
+header .row .bottom .menu ul li .shop-dropdown .main-box .box ul li a:hover {
+  color: rgb(255, 187, 56);
+  opacity: 1;
+  border-bottom: 1px solid rgb(255, 187, 56);
+}
+header .row .bottom .btn {
+  width: 15%;
+  text-align: right;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+header .row .bottom .btn a {
+  font-size: 16px;
+  padding: 12px 20px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+
+.hero-section .container .row .main-box {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero-section .container .row .main-box .box-1 {
+  width: 65%;
+}
+.hero-section .container .row .main-box .box-1 .image {
+  width: 100%;
+  padding: 15px;
+}
+.hero-section .container .row .main-box .box-1 .image img {
+  width: 100%;
+  display: block;
+}
+.hero-section .container .row .main-box .box-2 {
+  width: 35%;
+}
+.hero-section .container .row .main-box .box-2 .image {
+  width: 100%;
+  height: 50%;
+  padding: 15px;
+}
+.hero-section .container .row .main-box .box-2 .image img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.hero-section .container .row .main-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 30px;
+  align-items: center;
+}
+.hero-section .container .row .main-card .cart {
+  background-color: white;
+  width: 25%;
+  padding: 15px 20px;
+}
+.hero-section .container .row .main-card .cart .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0px;
+}
+.hero-section .container .row .main-card .cart .content ul {
+  padding-left: 10px;
+}
+.hero-section .container .row .main-card .cart .content ul li span {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  display: block;
+}
+.hero-section .container .row .main-card .cart .content ul li p {
+  color: rgb(121, 121, 121);
+}
+.hero-section .container .row .main-card .cart .content .icon {
+  width: -moz-max-content;
+  width: max-content;
+}
+.hero-section .container .row .main-card .cart .content .icon i {
+  font-size: 40px;
+  color: rgb(255, 187, 56);
+}
+.hero-section .container .row .main-card .cart:nth-child(2) .content .icon i {
+  color: green;
+}
+.hero-section .container .row .main-card .cart:nth-child(3) .content .icon i {
+  color: red;
+}
+.hero-section .container .row .main-card .cart:nth-child(4) .content .icon i {
+  color: blue;
+}
+
+.gamerworld-section .container .row .main-heading {
+  padding: 10px 30px;
+}
+.gamerworld-section .container .row .main-heading ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gamerworld-section .container .row .main-heading ul li a {
+  font-weight: 600;
+}
+@keyframes slideright {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.gamerworld-section .container .row .main-heading ul li a i {
+  padding-left: 10px;
+  font-size: 15px;
+  animation: slideright 1s linear infinite;
+}
+.gamerworld-section .container .row .main-box {
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gamerworld-section .container .row .main-box .box {
+  width: 25%;
+  padding: 15px;
+}
+.gamerworld-section .container .row .main-box .box .content {
+  padding: 20px 25px;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+.gamerworld-section .container .row .main-box .box .content:hover .extra-feature {
+  right: 30px;
+  opacity: 1;
+}
+.gamerworld-section .container .row .main-box .box .content:hover .btn {
+  bottom: 29px;
+  opacity: 1;
+}
+.gamerworld-section .container .row .main-box .box .content .extra-feature {
+  position: absolute;
+  right: -40px;
+  top: 70px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.gamerworld-section .container .row .main-box .box .content .extra-feature ul li {
+  padding: 5px 0px;
+}
+.gamerworld-section .container .row .main-box .box .content .extra-feature ul li a {
+  border-radius: 5px;
+  display: block;
+  background-color: rgb(248, 248, 248);
+}
+.gamerworld-section .container .row .main-box .box .content .extra-feature ul li a i {
+  font-size: 20px;
+  padding: 10px;
+}
+.gamerworld-section .container .row .main-box .box .content .btn {
+  position: absolute;
+  bottom: -40px;
+  right: 35px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.gamerworld-section .container .row .main-box .box .content .btn a {
+  background-color: rgb(255, 187, 56);
+  padding: 10px 40px;
+  font-size: 17px;
+  color: black;
+}
+.gamerworld-section .container .row .main-box .box .content .btn a i {
+  padding-right: 20px;
+}
+.gamerworld-section .container .row .main-box .box .content p {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.gamerworld-section .container .row .main-box .box .content p a {
+  color: black;
+}
+.gamerworld-section .container .row .main-box .box .content p a i {
+  padding-left: 10px;
+  font-size: 13px;
+}
+.gamerworld-section .container .row .main-box .box .content ul li {
+  padding: 5px 0px;
+}
+.gamerworld-section .container .row .main-box .box .content ul li a {
+  color: rgb(121, 121, 121);
+}
+.gamerworld-section .container .row .main-box .box .content ul li a:hover {
+  color: black;
+  border-bottom: 0.5px solid black;
+}
+.gamerworld-section .container .row .main-box .box .content .popular {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.gamerworld-section .container .row .main-box .box .content .popular span {
+  color: white;
+  background-color: rgb(25, 204, 64);
+  font-size: 13px;
+  border-radius: 15px;
+  padding: 5px 20px;
+}
+.gamerworld-section .container .row .main-box .box .content .availablity {
+  position: absolute;
+  width: 70%;
+  top: 13px;
+  left: 40px;
+}
+.gamerworld-section .container .row .main-box .box .content .availablity ul {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+.gamerworld-section .container .row .main-box .box .content .availablity ul li {
+  font-size: 16px;
+}
+.gamerworld-section .container .row .main-box .box .content .availablity .process {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+  border-radius: 22px;
+}
+.gamerworld-section .container .row .main-box .box .content .availablity .process .done {
+  width: 60%;
+  background-color: rgb(255, 187, 56);
+  height: 5px;
+  border-radius: 22px;
+}
+.gamerworld-section .container .row .main-box .box .content .image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+.gamerworld-section .container .row .main-box .box .content .image img {
+  display: block;
+  width: 100%;
+}
+.gamerworld-section .container .row .main-box .box .content .detail {
+  padding-left: 10px;
+  width: 100%;
+  padding-bottom: 20px;
+  position: relative;
+}
+.gamerworld-section .container .row .main-box .box .content .detail ul {
+  display: flex;
+  padding: 10px 0px;
+}
+.gamerworld-section .container .row .main-box .box .content .detail ul li i {
+  color: rgb(255, 187, 56);
+}
+.gamerworld-section .container .row .main-box .box .content .detail a {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  padding-bottom: 10px;
+  transition: all 0.5s;
+}
+.gamerworld-section .container .row .main-box .box .content .detail a:hover {
+  color: rgb(37, 99, 235);
+}
+.gamerworld-section .container .row .main-box .box .content .detail span {
+  font-size: 18px;
+  color: rgb(121, 121, 121);
+  text-decoration: line-through;
+  font-weight: 600;
+}
+.gamerworld-section .container .row .main-box .box .content .detail p {
+  color: rgb(239, 38, 44);
+  display: inline;
+  font-size: 18px;
+  font-weight: 600;
+}
+.gamerworld-section .container .row .main-box .box:nth-child(1) .content {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url(/assets/image/section-category-1.jpg);
+}
+
+.brand-section .container .row .main-heading h2 {
+  padding: 30px;
+}
+.brand-section .container .row .image-box {
+  padding: 30px;
+}
+.brand-section .container .row .image-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+}
+.brand-section .container .row .image-box ul li {
+  padding: 40px 20px;
+  width: 16.66%;
+  border: 1px solid rgb(248, 248, 248);
+}
+.brand-section .container .row .image-box ul li img {
+  display: block;
+}
+
+.flash-section .container .row .main-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.flash-section .container .row .main-box .box {
+  width: 50%;
+}
+.flash-section .container .row .main-box .box:nth-child(1) {
+  background-image: url(/assets/image/campaign-cover-countdown.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flash-section .container .row .main-box .box:nth-child(2) {
+  padding: 40px;
+  background-image: url(/assets/image/download-app-cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flash-section .container .row .main-box .box:nth-child(2) h5 {
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 20px 0px;
+  font-size: 14px;
+}
+.flash-section .container .row .main-box .box:nth-child(2) h3 {
+  line-height: 40px;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  font-size: 30px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+}
+.flash-section .container .row .main-box .box:nth-child(2) h3 span {
+  padding-bottom: 3px;
+  color: red;
+  border-bottom: 2px solid red;
+}
+.flash-section .container .row .main-box .box:nth-child(2) ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.flash-section .container .row .main-box .box:nth-child(2) ul li {
+  padding-right: 20px;
+}
+.flash-section .container .row .main-box .box:nth-child(2) ul li img {
+  display: block;
+}
+.flash-section .container .row .main-box .box:nth-child(2) .image {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flash-section .container .row .main-box .box:nth-child(2) .image img {
+  display: block;
+}/*# sourceMappingURL=shopo.css.map */
